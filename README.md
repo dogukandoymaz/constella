@@ -5,123 +5,122 @@
 [![Platform](https://img.shields.io/badge/Platform-iOS_%7C_Android-black?style=flat-square)](#)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
 
-> **Constella**, gökyüzündeki yıldızları birbirine bağlayarak büyüleyici takımyıldızlar oluşturduğunuz, retro-modern estetiğe sahip, sakinleştirici ama bir o kadar da zorlayıcı bir mobil arcade oyunudur. 
+> **Constella** is a visually stunning, retro-modern, constellation-themed casual arcade game where you launch and connect stars to form beautiful constellations.
 
-Flutter ve Flame oyun motoru kullanılarak geliştirilen Constella, klasik *aa* tarzı zamanlama mekaniklerini kozmik bir tema, dinamik zorluk faktörleri ve zengin bir ilerleme sistemiyle birleştirir.
-
----
-
-## 🌌 Temel Oynanış ve Mekanikler
-
-Constella, basit dokunuşlarla başlayan ancak seviye ilerledikçe derinleşen dinamik bir zorluk eğrisine sahiptir:
-
-*   **Fırlat ve Sapla:** Ekrana dokunarak alt kısımdaki yıldızları merkezde dönen çekirdeğe (core) fırlatın. Yıldızların birbirine çarpmamasına dikkat edin!
-*   **Renk Eşleştirme Modu (Color Mode):** Bazı seviyelerde çekirdek renkli dilimlere bölünmüştür. Yıldızları yalnızca kendi rengindeki dilime saplamalısınız.
-*   **Kozmik Toz Bulutları (Dead Zones):** Çekirdek üzerinde dönen kırmızı renkli yasaklı bölgeler yer alır. Yıldızlarınızı bu bölgelere saplarsanız çekirdek patlar ve başarısız olursunuz.
-*   **Dinamik Çekirdek Hareketleri:**
-    *   *Nefes Alma (Radius Pulse):* Çekirdek ritmik olarak büyüyüp küçülür, saplama zamanlamanızı zorlaştırır.
-    *   *Yön Değiştirme (Flip):* Çekirdek belirli turlardan sonra aniden dönüş yönünü tersine çevirir.
-    *   *Sarsıntı (Jolt):* Yıldız saplandığında veya rastgele anlarda çekirdek ani sarsıntılar yaşar.
-*   **Boss Seviyeleri:** Belirli aralıklarla gelen boss seviyelerinde tüm bu zorlu mekanikler bir araya gelerek reflekslerinizi test eder.
+Built using Flutter and the Flame game engine, Constella reinvents the classic *aa*-style timing mechanics by introducing cosmic themes, dynamic difficulty modifiers, and a rich progression system.
 
 ---
 
-## ✨ Özellikler
+## 🌌 Core Gameplay & Mechanics
 
-*   **Yıldız Tozu (Stardust) & Kozmetik Mağazası:** Bölümleri tamamlayarak kazandığınız yıldız tozlarıyla mağazadan yeni yıldız görünümleri (Skins) ve çekirdek temaları (Cores) satın alabilirsiniz.
-    *   **Yıldız Görünümleri:** Klasik, Elmas, Zümrüt, Nova, Kuyruklu Yıldız.
-    *   **Çekirdek Temaları:** Klasik, Kor, Ametist, Yeşim, Buz.
-*   **Günlük Görevler (Daily Quests):** Her gün yenilenen hedefleri (örn: 5 seviye geç, 3 kıl payı kaçış yap) tamamlayarak ekstra yıldız tozu kazanın.
-*   **Giriş Serileri (Streaks):** Oyuna her gün kesintisiz giriş yaparak günlük ödüllerinizi katlayın.
-*   **Çoklu Dil Desteği:** 9 farklı yerelleştirilmiş dil seçeneği:
-    *   Türkçe, İngilizce, İspanyolca, Portekizce, Fransızca, Almanca, Rusça, İtalyanca ve Endonezyaca.
-*   **Monetization & Reklam:**
-    *   Google Mobile Ads entegrasyonu (Banner ve Ödüllü/Geçiş reklamları).
-    *   Kullanıcıların başarısız olduğunda reklam izleyerek veya yıldız tozu harcayarak kaldığı yerden devam edebilmesini sağlayan *Continue* mekanizması.
-    *   Reklamları kaldırma, bölüm atlama veya tüm seviyeleri serbestçe açan **God Mode** desteği.
+Constella features a progressive learning curve that starts simple and builds up to complex, multi-layered challenges:
 
----
-
-## 🛠️ Teknoloji Yığını (Tech Stack)
-
-*   **Flutter (SDK ^3.11.4):** Çapraz platform arayüz ve yaşam döngüsü yönetimi.
-*   **Flame (^1.37.0):** Oyun döngüsü (game loop), bileşenler (components) ve render işlemleri.
-*   **Flame Audio (^2.12.1):** Arka plan müzikleri ve ses efektlerinin gecikmesiz çalınması.
-*   **Shared Preferences (^2.5.5):** Skorlar, seviye ilerlemeleri, stardust bakiyesi ve satın alınan mağaza ögelerinin cihazda güvenli saklanması.
-*   **Google Mobile Ads (^9.0.0):** Reklam yönetimi.
-*   **App Tracking Transparency (^2.0.7):** iOS kullanıcıları için ATT izin penceresi entegrasyonu.
+*   **Launch & Pin:** Tap the screen to shoot stars and pin them onto the spinning center core. Make sure stars do not touch each other!
+*   **Color Matching Mode:** In color-themed levels, the core is split into colored slices. You must pin each star onto the slice with the matching color.
+*   **Cosmic Dust (Dead Zones):** Red forbidden areas rotate along the core. Pinning a star onto these zones causes an explosion and failure.
+*   **Dynamic Core Behaviors:**
+    *   *Radius Pulse:* The core expands and shrinks rhythmically, constantly changing your timing window.
+    *   *Direction Flip:* The core suddenly reverses its rotational direction after a certain number of turns.
+    *   *Jolt:* Pinned stars or sudden space tremors cause the core to shake unexpectedly.
+*   **Boss Levels:** Face intense challenges where multiple mechanics combine to test your reflexes.
 
 ---
 
-## 📂 Proje Yapısı
+## ✨ Key Features
+
+*   **Stardust & Customization Shop:** Earn *stardust* by clearing levels and spend it in the shop to unlock gorgeous cosmetic skins and cores.
+    *   **Star Skins:** Classic, Diamond, Emerald, Nova, Comet.
+    *   **Core Themes:** Classic, Ember, Amethyst, Jade, Frost.
+*   **Daily Quests & Streaks:** Complete daily challenges (e.g., clear 5 levels, get 3 near misses) to gain extra stardust and build login streaks.
+*   **Multi-language Support:** Localized in 9 languages:
+    *   English, Turkish, Spanish, Portuguese, French, German, Russian, Italian, and Indonesian.
+*   **Monetization & Ads:**
+    *   Google Mobile Ads integration (Banner and Rewarded/Interstitial ads).
+    *   A *Continue* system allowing players to watch an ad or spend stardust to resume after failing.
+    *   Premium features like "Remove Ads", "Skip Level", and **God Mode** (unlimited skips & ad-free).
+
+---
+
+## 🛠️ Technology Stack
+
+*   **Flutter (SDK ^3.11.4):** Cross-platform UI structure and lifecycle handling.
+*   **Flame (^1.37.0):** High-performance 2D game engine managing components and rendering.
+*   **Flame Audio (^2.12.1):** Latency-free background music and sound effects.
+*   **Shared Preferences (^2.5.5):** Local data persistence for scores, levels, stardust, and unlocked cosmetics.
+*   **Google Mobile Ads (^9.0.0):** Mobile monetization.
+*   **App Tracking Transparency (^2.0.7):** iOS compliance for ad tracking authorization.
+
+---
+
+## 📂 Project Structure
 
 ```
 lib/
-├── main.dart            # Uygulama başlangıcı, reklam yüklemeleri ve ana widget ağacı.
-├── game.dart            # Flame Game döngüsü, fizik motoru ve oyun içi mekanikler.
-├── level_config.dart    # Algoritmik/deterministik seviye üretim motoru ve zorluk bütçesi.
-├── overlays.dart        # Flutter tabanlı menüler, mağaza, ayarlar ve HUD ekranları.
-├── strings.dart         # 9 dilli yerelleştirme (localization) veri tabanı.
-└── ads.dart             # Google Mobile Ads servis yapılandırması.
+├── main.dart            # App entry point, ad setup, and core MaterialApp structure.
+├── game.dart            # Flame Game loop, physics, collisions, and gameplay rules.
+├── level_config.dart    # Algorithmic/deterministic level generation and difficulty scaling.
+├── overlays.dart        # Flutter-based overlay menus (shop, settings, quests, HUD).
+├── strings.dart         # Localization database supporting 9 languages.
+└── ads.dart             # Ad service configurations.
 ```
 
 ---
 
-## 🔄 Oyun Durum Akışı (Game Loop)
+## 🔄 Game State Flow
 
-Aşağıdaki şemada oyunun Flame tabanlı durum geçişleri gösterilmiştir:
+The state machine transitions of the Flame game loop are mapped as follows:
 
 ```mermaid
 graph TD
-    A[onboarding] -->|İlk Başlangıç| B[title - Ana Menü]
-    B -->|Başlat / Oyna| C[playing - Oyun]
-    C -->|Dokunma / Fırlatma| D[connecting - Bağlanıyor]
-    D -->|Başarılı Saplama / Kalan Yıldız = 0| E[levelComplete - Başarılı]
-    D -->|Hata / Çarpışma / Dead Zone| F[dying - Başarısız]
-    E -->|Sonraki Bölüm| C
-    F -->|Devam Et: Reklam / Yıldız Tozu| C
-    F -->|Yeniden Başla / Çık| G[gameOver]
-    G -->|Tekrar Dene| C
-    G -->|Ana Menüye Dön| B
+    A[onboarding] -->|First Launch| B[title - Main Menu]
+    B -->|Start / Play| C[playing - Gameplay]
+    C -->|Tap / Launch| D[connecting - Star in Flight]
+    D -->|Success / Remaining Stars = 0| E[levelComplete - Victory]
+    D -->|Collision / Dead Zone Strike| F[dying - Defeat]
+    E -->|Next Level| C
+    F -->|Continue: Watch Ad / Spend Dust| C
+    F -->|Restart / Quit| G[gameOver]
+    G -->|Retry Level| C
+    G -->|Return to Menu| B
 ```
 
 ---
 
-## 🚀 Başlangıç (Getting Started)
+## 🚀 Getting Started
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
+To run the project locally on your machine, follow these steps:
 
-1.  **Gereksinimler:**
-    *   Flutter SDK (v3.11.4 veya üzeri)
-    *   Uyumlu bir IDE (VS Code veya Android Studio)
+1.  **Prerequisites:**
+    *   Flutter SDK (v3.11.4 or higher)
+    *   An IDE (VS Code or Android Studio) with Flutter extensions
 
-2.  **Projeyi Klonlayın:**
+2.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/kullanici_adi/constella.git
+    git clone https://github.com/dogukandoymaz/constella.git
     cd constella
     ```
 
-3.  **Bağımlılıkları Yükleyin:**
+3.  **Fetch Dependencies:**
     ```bash
     flutter pub get
     ```
 
-4.  **Uygulamayı Çalıştırın:**
+4.  **Run the App:**
     ```bash
-    # Android veya iOS simülatörünüzün/cihazınızın bağlı olduğundan emin olun
+    # Ensure you have a simulator or a physical device connected
     flutter run
     ```
 
 ---
 
-## 🌌 Katkıda Bulunma (Contributing)
+## 🌌 Contributing
 
-1. Bu projeyi fork edin.
-2. Yeni bir özellik dalı (branch) oluşturun: `git checkout -b yeni-ozellik`
-3. Değişikliklerinizi taahhüt edin (commit): `git commit -am 'Yeni özellik eklendi'`
-4. Dalı yukarı itin (push): `git push origin yeni-ozellik`
-5. Bir Pull Request oluşturun.
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
 ---
 
-*Constella, gökyüzünün sessizliğini parmaklarınızın ucuna getirir. Yıldızları birleştirin ve kendi takımyıldızınızı yaratın! ✦*
+*Constella brings the silence and beauty of the night sky to your fingertips. Connect the stars and create your own universe! ✦*
